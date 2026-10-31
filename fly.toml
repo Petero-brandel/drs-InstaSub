@@ -1,0 +1,12 @@
+# fly.toml app configuration file for DRSub Telegram Bot
+# Configured for continuous 24/7 polling worker on Supabase Postgres ($0.00 spend)
+
+app = "drsub-bot"
+primary_region = "lhr"
+
+[build]
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory = "256mb"

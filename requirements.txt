@@ -1,0 +1,21 @@
+# Telegram Bot
+python-telegram-bot[webhooks]==21.*
+
+# Web server (Paystack webhooks)
+fastapi[standard]>=0.115
+uvicorn[standard]>=0.30
+
+# Database
+asyncpg>=0.30
+aiosqlite>=0.20
+sqlalchemy[asyncio]>=2.0
+alembic>=1.14
+
+# Settings & environment
+pydantic-settings>=2.6
+
+# HTTP client (SubExpress, Paystack)
+httpx>=0.28
+
+# Utilities
+python-dotenv>=1.0

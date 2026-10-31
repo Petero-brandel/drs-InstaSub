@@ -1,0 +1,12 @@
+services:
+  bot:
+    build: .
+    container_name: drsub-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - drsub_data:/app/data
+
+volumes:
+  drsub_data:
